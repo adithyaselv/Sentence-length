@@ -16,6 +16,7 @@ class RequestForm extends Component {
         currentProgress: 0,
         result: false,
         resultText: null,
+        fetchTime: 0,
     }
 
     urlOnChange = (event) => {
@@ -30,17 +31,20 @@ class RequestForm extends Component {
     handleFormSubmit = () => {
 
         this.setState({
+            result:false,
             loading:true
         })
 
         const params = {bookUrl: this.state.bookUrl}
-
+        const start = Date.now();
         axios.get("https://us-central1-vocal-pad-109004.cloudfunctions.net/sentence-histogram", {params})
             .then(res => {
+                const millis = Date.now() - start;
                 this.setState({
                     loading: false,
                     result: true,
                     resultText: res.data,
+                    fetchTime: millis/1000,
                 })
             })
             .catch(err => {
@@ -59,9 +63,10 @@ class RequestForm extends Component {
                     <Jumbotron fluid>
                         <Container>
                             <h4>Histogram Result: </h4>
+                            <span>Processing time: {this.state.fetchTime} seconds</span>
                             <h6>Histogram graph: </h6>
                             <Image src={this.state.resultText.hist_image} fluid />
-                            <h6>Word count per sentence data</h6>
+                            <h6>Word count: Number of sentences - data</h6>
                             <p>
                                 {JSON.stringify(this.state.resultText.hist_data, null, 2)}
                             </p>
