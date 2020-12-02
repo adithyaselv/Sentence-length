@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Sentence-length/static/css/main.ab830e05.chunk.css",
+    "main.js": "/Sentence-length/static/js/main.fbd7b7fa.chunk.js",
+    "main.js.map": "/Sentence-length/static/js/main.fbd7b7fa.chunk.js.map",
+    "runtime-main.js": "/Sentence-length/static/js/runtime-main.ea6150c6.js",
+    "runtime-main.js.map": "/Sentence-length/static/js/runtime-main.ea6150c6.js.map",
+    "static/css/2.437d98bc.chunk.css": "/Sentence-length/static/css/2.437d98bc.chunk.css",
+    "static/js/2.6e966e80.chunk.js": "/Sentence-length/static/js/2.6e966e80.chunk.js",
+    "static/js/2.6e966e80.chunk.js.map": "/Sentence-length/static/js/2.6e966e80.chunk.js.map",
+    "index.html": "/Sentence-length/index.html",
+    "precache-manifest.3dd5ef8406c084e009ffe1243f86e73e.js": "/Sentence-length/precache-manifest.3dd5ef8406c084e009ffe1243f86e73e.js",
+    "service-worker.js": "/Sentence-length/service-worker.js",
+    "static/css/2.437d98bc.chunk.css.map": "/Sentence-length/static/css/2.437d98bc.chunk.css.map",
+    "static/css/main.ab830e05.chunk.css.map": "/Sentence-length/static/css/main.ab830e05.chunk.css.map",
+    "static/js/2.6e966e80.chunk.js.LICENSE.txt": "/Sentence-length/static/js/2.6e966e80.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ea6150c6.js",
+    "static/css/2.437d98bc.chunk.css",
+    "static/js/2.6e966e80.chunk.js",
+    "static/css/main.ab830e05.chunk.css",
+    "static/js/main.fbd7b7fa.chunk.js"
+  ]
+}

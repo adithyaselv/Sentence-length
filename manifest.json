@@ -1,0 +1,8 @@
+{
+  "short_name": "Sentence lengths",
+  "name": "Find histogram of sentence with different word counts",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
